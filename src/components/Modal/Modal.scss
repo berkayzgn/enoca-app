@@ -1,0 +1,87 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background: color-mix(in srgb, #000 55%, transparent);
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    z-index: 1000;
+}
+
+/* Panel */
+.modal__panel {
+    position: relative;
+    width: min(600px, 100%);
+    max-height: 80dvh;
+    overflow: auto;
+    background: var(--c-surface, #fff);
+    color: var(--c-text, #111);
+    border: 1px solid var(--c-border, #e6e6e6);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-xl, 0 20px 60px rgba(0, 0, 0, .25));
+    padding: 1.25rem 1.25rem 1rem;
+
+    animation: modal-in .18s ease-out both;
+}
+
+.modal__title {
+    margin: 0 2rem 1rem 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--c-text-strong, #0f172a);
+}
+
+.modal__body {
+    line-height: 1.55;
+}
+
+/* Kapat butonu */
+.modal__close {
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--c-border, #e6e6e6);
+    border-radius: .6rem;
+    background: var(--c-bg, #fff);
+    color: var(--c-text, #111);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform .12s ease, background .12s ease;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-primary, #6a1e55) 25%, transparent);
+    }
+}
+
+/* Animasyonlar ve reduced-motion saygısı */
+@keyframes modal-in {
+    from {
+        transform: translateY(6px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modal__panel {
+        animation: none;
+    }
+}
+
+:root[data-theme="dark"] .modal__panel {
+    background: var(--c-surface, #0b1220);
+    color: var(--c-text, #e5e7eb);
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+}
