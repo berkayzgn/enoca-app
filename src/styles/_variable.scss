@@ -1,0 +1,79 @@
+/* ======================
+   TEMEL RENK DEĞİŞKENLERİ (000000, 150050, 3F0071, 610094)
+   ====================== */
+
+/* Light Tema */
+:root[data-theme="light"] {
+    --c-header: #ffffff;
+    /*  header için  */
+    --c-surface: #fafafa;
+    /* açık zemin */
+    --c-text: #000000;
+    /* siyah metin */
+    --c-text-2: #000000;
+    /* siyah metin */
+    --c-primary: #3f0071;
+    /* mor ana renk */
+    --c-accent: #610094;
+    /* güçlü mor vurgu */
+    --c-border: #d1c6db;
+    /* açık mor-gri kenarlık */
+    --c-muted: #4e4e4e;
+    /* soluk metin */
+
+    --c-btn: #3f0071;
+    /* arka plana göre buton */
+
+    --c-btn-2: #3f0071;
+    /* arka plana göre buton */
+    --c-acoordion: #e7e6e6;
+    /* acc arkası */
+    --shadow-top: 0 -4px 8px rgba(0, 0, 0, 0.15);
+    /* footer için shadow*/
+
+    --shadow-bottom: 0 4px 10px rgba(0, 0, 0, 0.25);
+    /* header için shadow*/
+
+}
+
+/* Dark Tema */
+:root[data-theme="dark"] {
+    --c-header: #3f0071;
+    /*  header için  */
+    --c-surface: #000000;
+    /* saf siyah zemin */
+    --c-text: #ffffff;
+    /* açık metin */
+    --c-text-2: #000000;
+    /* açık metin */
+    --c-primary: #610094;
+    /* canlı mor (daha parlak) */
+    --c-accent: #3f0071;
+    /* koyu mor vurgu */
+    --c-border: #150050;
+    /* koyu mavi-mor kenarlık */
+    --c-muted: #b9b4c7;
+    /* açık gri-mor ikincil metin */
+    --c-btn: #fafafa;
+    /* arka plana göre buton */
+    --c-btn-2: #3f0071;
+    /* arka plana göre buton */
+
+    --c-accordion: #e7e6e6;
+    /* acc arkası */
+
+    --shadow-top: 0 -2px 8px rgba(200, 200, 200, 200);
+    /* footer için shadow*/
+
+    --shadow-bottom: 0 4px 10px rgba(200, 200, 200, 200);
+    /* header için shadow*/
+
+}
+
+/* Ortak (tema bağımsız) */
+:root {
+    --c-white: #ffffff;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --transition-fast: 0.25s ease;
+}
