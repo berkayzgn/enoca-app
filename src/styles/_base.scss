@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--c-surface);
+    color: var(--c-text);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2 {
+    color: var(--c-primary);
+}
+
+a {
+    color: var(--c-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
