@@ -1,22 +1,13 @@
-import Button from "./components/Button/Button";
-
-const Submit = () => {
-    // form kontrol
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        const name = e.target.name.value.trim();
-        const email = e.target.email.value.trim();
-        const message = e.target.message.value.trim();
 
         if (!name || !email || !message) {
             alert("Lütfen tüm alanları doldurun!");
             return;
         }
 
+        // burada modal aç (setOpen(true)) ya da alert
         alert("Form başarıyla gönderildi!");
+        e.currentTarget.reset();
     };
-
 
     return (
         <div className="Submit">
@@ -31,12 +22,13 @@ const Submit = () => {
                     placeholder="Adınızı girin"
                 />
 
-                <label htmlFor="email">E-posta</label>
-                <input
-                    type="email"
+                <Input
                     id="email"
                     name="email"
-                    placeholder="E-posta adresiniz"
+                    label="E-posta"
+                    type="email"
+                    placeholder="E-posta adresinizi girin"
+                    required
                 />
 
                 <label htmlFor="message">Mesajınız</label>
@@ -49,8 +41,20 @@ const Submit = () => {
 
                 <Button type="submit">Gönder</Button>
             </form>
+
+            {/*  Modal kullanımı */}
+            <Modal
+                isOpen={open}
+                onClose={() => setOpen(false)}
+                ariaLabel="Gönderim bilgisi"
+            >
+                <h3>Teşekkürler!</h3>
+                <p>Mesajınız başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz.</p>
+                <Button onClick={() => setOpen(false)}>Kapat</Button>
+            </Modal>
         </div>
     );
 };
 
 export default Submit;
+
