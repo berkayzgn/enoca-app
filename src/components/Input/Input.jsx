@@ -1,4 +1,4 @@
-// src/components/Input/Input.jsx
+
 import "./Input.scss";
 
 export default function Input({ id, label, error, ...props }) {
