@@ -6,6 +6,7 @@ import Header from "./Header";
 import Main from "./Main";
 import SSS from "./SSS";
 import Submit from "./Submit";
+import Footer from "./Footer"
 
 function App() {
   return (
@@ -14,13 +15,7 @@ function App() {
       <Main />
       <SSS />
       <Submit />
-
-      <footer>
-        <div id="footer-items">
-          <p>© 2025 Tüm hakları saklıdır.</p>
-          <img src="./img/logo.png" alt="" />
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
