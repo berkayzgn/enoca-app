@@ -1,3 +1,11 @@
+## [1.3.0] - 2025-10-27
+### Added
+- Yeni `Footer` bileşeni (JSX)
+### Changed
+- `Input` bileşeni düzenlendi; etkileşim ve yapı iyileştirildi.
+- `index.jsx` import ve render düzenlemeleri.
+
+
 ## [1.2.1] - 2025-10-27
 ### Fixed
 - SCSS import sırası düzeltildi; global `_variables.scss` dosyası artık tüm component stillerinden önce yükleniyor.
