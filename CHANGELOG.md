@@ -1,3 +1,10 @@
+## [1.2.1] - 2025-10-27
+### Fixed
+- SCSS import sırası düzeltildi; global `_variables.scss` dosyası artık tüm component stillerinden önce yükleniyor.
+- Component SCSS dosyalarındaki relative path hataları giderildi.
+- `package.json` ve `package-lock.json` bağımlılık uyumsuzlukları düzeltildi.
+
+
 ## [1.2.0] - 2025-10-27
 ### Added
 - Input ve Modal bileşenleri (JSX + SCSS)
