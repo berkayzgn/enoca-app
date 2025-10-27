@@ -1,20 +1,3 @@
-<<<<<<< Updated upstream
-=======
-import { useState } from "react";
-import Button from "./components/Button/Button";
-import Input from "./components/Input/Input.jsx";
-import Modal from "./components/Modal/Modal.jsx";
-
-const Submit = () => {
-    const [open, setOpen] = useState(false);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const fd = new FormData(e.currentTarget);
-
-        const name = (fd.get("name") || "").toString().trim();
-        const email = (fd.get("email") || "").toString().trim();
-        const message = (fd.get("message") || "").toString().trim();
 
         if (!name || !email || !message) {
             alert("Lütfen tüm alanları doldurun!");
@@ -74,4 +57,4 @@ const Submit = () => {
 };
 
 export default Submit;
->>>>>>> Stashed changes
+

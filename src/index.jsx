@@ -1,23 +1,27 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles/index.scss";
 
+import Header from "./Header";
+import Main from "./Main";
+import SSS from "./SSS";
+import Submit from "./Submit";
+import Footer from "./Footer"
 
 function App() {
   return (
     <>
-      <h1>
-        BERKAY
-      </h1>
+      <Header />
+      <Main />
+      <SSS />
+      <Submit />
+      <Footer />
     </>
   );
 }
 
-
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
   </StrictMode>
-)
-
+);

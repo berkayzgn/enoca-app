@@ -1,0 +1,30 @@
+.card {
+    background-color: var(--c-header);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: var(--shadow-bottom);
+
+
+
+    .card-header {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .card-body {
+        margin: 10px 0;
+        font-size: 0.95rem;
+    }
+
+    .card-footer {
+        font-weight: 500;
+        margin-top: 8px;
+
+    }
+}
