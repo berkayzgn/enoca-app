@@ -1,7 +1,7 @@
-@use './variables';
-@use './base';
-@use './layout';
-@use './utilities';
+@use './_variable';
+@use './_base';
+@use './_layout';
+@use './_utilities';
 @use '../components/Button/Button';
 @use '../components/Card/Card';
 @use '../components/Accordion/Accordion';
