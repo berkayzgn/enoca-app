@@ -127,6 +127,11 @@ ENCOCA-APP/
 Performans testini **Chrome Lighthouse** ile yaptım.  
 Skorum **95** çıktı.
 
+## Vercel BAğlantı Linki :
+
+https://enoca-app.vercel.app
+
+
 
 
 
