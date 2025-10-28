@@ -66,52 +66,54 @@ Mobil öncelikli olarak 3 breakpoint kullandım:
 
 ## 📁 Proje Mimarisi
 
+```text
 ENCOCA-APP/
 ├── dist/ # Build çıktıları
 ├── docs/ # Dokümantasyon ve rapor dosyaları
-│ ├── adr-component-stucture.md
-│ ├── adr-theme-system.md
-│ ├── daily-progress.md
-│ └── lighthouse.png
+│   ├── adr-component-stucture.md
+│   ├── adr-theme-system.md
+│   ├── daily-progress.md
+│   └── lighthouse.png
 ├── public/ # Statik dosyalar ve görseller
-│ ├── img/
-│ │ ├── logo.png
-│ └── vite.svg
+│   ├── img/
+│   │   ├── logo.png
+│   └── vite.svg
 ├── src/
-│ ├── components/ # Yeniden kullanılabilir UI bileşenleri
-│ │ ├── Accordion/
-│ │ │ ├── Accordion.jsx
-│ │ │ └── Accordion.scss
-│ │ ├── Button/
-│ │ │ ├── Button.jsx
-│ │ │ └── Button.scss
-│ │ ├── Card/
-│ │ │ ├── Card.jsx
-│ │ │ └── Card.scss
-│ │ ├── Input/
-│ │ │ ├── Input.jsx
-│ │ │ └── Input.scss
-│ │ └── Modal/
-│ │ ├── Modal.jsx
-│ │ └── Modal.scss
-│ ├── styles/ # Global SCSS dosyaları ve değişkenler
-│ │ ├── _base.scss
-│ │ ├── _layout.scss
-│ │ ├── _utilities.scss
-│ │ ├── _variables.scss
-│ │ └── index.scss
-│ ├── Footer.jsx
-│ ├── Header.jsx
-│ ├── Main.jsx
-│ ├── SSS.jsx
-│ ├── Submit.jsx
-│ ├── ThemeToggle.jsx
-│ └── index.jsx
+│   ├── components/ # Yeniden kullanılabilir UI bileşenleri
+│   │   ├── Accordion/
+│   │   │   ├── Accordion.jsx
+│   │   │   └── Accordion.scss
+│   │   ├── Button/
+│   │   │   ├── Button.jsx
+│   │   │   └── Button.scss
+│   │   ├── Card/
+│   │   │   ├── Card.jsx
+│   │   │   └── Card.scss
+│   │   ├── Input/
+│   │   │   ├── Input.jsx
+│   │   │   └── Input.scss
+│   │   └── Modal/
+│   │       ├── Modal.jsx
+│   │       └── Modal.scss
+│   ├── styles/ # Global SCSS dosyaları ve değişkenler
+│   │   ├── _base.scss
+│   │   ├── _layout.scss
+│   │   ├── _utilities.scss
+│   │   ├── _variables.scss
+│   │   └── index.scss
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Main.jsx
+│   ├── SSS.jsx
+│   ├── Submit.jsx
+│   ├── ThemeToggle.jsx
+│   └── index.jsx
 ├── CHANGELOG.md # Sürüm geçmişi
 ├── README.md # Proje açıklaması ve kurulum notları
 ├── package.json # Bağımlılıklar
 ├── vite.config.js # Vite yapılandırması
 └── .gitignore # Git hariç tutulan dosyalar
+
 
 - `src/components/` klasöründe **Button, Input, Card, Accordion, Modal** bileşenleri bulunuyor.  
 - `src/styles/` klasörü projede kullanılan tüm global SCSS dosyalarını içeriyor.  
